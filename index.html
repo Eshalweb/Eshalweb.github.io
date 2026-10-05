@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EshalWeb | Creative Digital Studio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b16;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px 20px;
+      background:
+        radial-gradient(circle at top left, #6d35ff55, transparent 35%),
+        radial-gradient(circle at bottom right, #00d9ff33, transparent 35%),
+        #0b0b16;
+    }
+
+    .hero {
+      max-width: 850px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #9f7cff;
+      margin-bottom: 35px;
+      letter-spacing: 2px;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #a982ff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #c7c7d8;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+      background: #8b5cf6;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #11111eeF;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      padding: 16px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #a982ff;
+    }
+
+    section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 90px 25px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .title h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .title p {
+      color: #aaaabd;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 750px;
+      margin: auto;
+      color: #c8c8d5;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      padding: 30px;
+      background: #151525;
+      border: 1px solid #292940;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      color: #b697ff;
+    }
+
+    .card p {
+      color: #aaaabd;
+      font-size: 15px;
+    }
+
+    .icon {
+      font-size: 38px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .gallery div {
+      height: 230px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #6d35ff, #19c8e8);
+      font-size: 20px;
+      font-weight: bold;
+      overflow: hidden;
+    }
+
+    .contact {
+      text-align: center;
+      background: #151525;
+      border-radius: 25px;
+      padding: 55px 25px;
+    }
+
+    .contact p {
+      color: #c5c5d2;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888899;
+      border-top: 1px solid #252535;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 12px;
+      }
+
+      .title h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HOME -->
+  <header id="home">
+    <div class="hero">
+
+      <div class="logo">ESHALWEB</div>
+
+      <h1>Welcome to <span>EshalWeb</span></h1>
+
+      <p>
+        Creative digital experiences, modern web solutions,
+        and thoughtful designs built to make ideas stand out.
+      </p>
+
+      <a href="#contact" class="button">Let's Connect</a>
+
+    </div>
+  </header>
+
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="title">
+      <h2>About EshalWeb</h2>
+      <p>A creative space for digital ideas.</p>
+    </div>
+
+    <div class="about">
+      <p>
+        EshalWeb is a personal digital space focused on creativity,
+        modern design and web development. The goal is to transform
+        ideas into beautiful, useful and memorable online experiences.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services">
+
+    <div class="title">
+      <h2>What I Do</h2>
+      <p>Creative solutions designed with purpose.</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h3>Web Development</h3>
+        <p>
+          Modern and responsive websites designed
+          for different devices and audiences.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Creative Design</h3>
+        <p>
+          Clean and attractive visual experiences
+          with attention to detail.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💡</div>
+        <h3>Digital Ideas</h3>
+        <p>
+          Turning creative concepts into practical
+          digital experiences.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- GALLERY -->
+  <section id="gallery">
+
+    <div class="title">
+      <h2>My Gallery</h2>
+      <p>Some visual space for your favourite work and images.</p>
+    </div>
+
+    <div class="gallery">
+
+      <div>YOUR IMAGE 1</div>
+      <div>YOUR IMAGE 2</div>
+      <div>YOUR IMAGE 3</div>
+      <div>YOUR IMAGE 4</div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <div class="contact">
+
+      <div class="title">
+        <h2>Let's Connect</h2>
+        <p>
+          Have an idea or project? Let's create something meaningful.
+        </p>
+      </div>
+
+      <a
+        class="button"
+        href="mailto:your@email.com">
+        Contact Me
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 EshalWeb — All Rights Reserved.
+  </footer>
+
+</body>
+    </html>
